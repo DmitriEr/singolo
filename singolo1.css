@@ -35,16 +35,15 @@
 
 body {
     margin: 0px;
-    /* font-family: "Lato", "Arial", sans-serif; */
     background-color: #f2f2f2;
-    font-size: 12px;
-    color: #767e9e;
 }
 
 .wrapper {
     width: 100%;
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 940px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 /* header */
@@ -71,15 +70,10 @@ body {
     margin: 0px;
     font-weight: bold;
     letter-spacing: -0.02em;
-    padding-left: 10px;
 }
 
 .logo span {
     color: #f06c64;
-}
-
-.header__navigation {
-    padding-right: 10px;
 }
 
 .navigation {
@@ -92,6 +86,7 @@ body {
 
 .navigation__item {
     font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
@@ -117,6 +112,7 @@ body {
 
 /* main */
 
+/* slider */
 .slider {
     background-color: #f06c64;
     
@@ -138,12 +134,9 @@ body {
     background-color: transparent;
 }
 
-.slider__left {
-    padding: 0px 0px 0px 10px;
-}
-
+.slider__left,
 .slider__right {
-    padding: 0px 10px 0px 0px;
+    padding: 0px;
 }
 
 .slider__left:hover,
@@ -158,4 +151,84 @@ body {
 
 .image-horizontal {
     padding-bottom: 2px;
+}
+
+/* our-services */
+.our-services {
+    padding-top: 57px;
+}
+
+.our-services__title {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #666d89; 
+    text-align: start;
+    margin: 0px;
+    line-height: 40px;
+}
+
+.our-services__text {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 30px;
+    color: #767e9e;
+    margin-top: 15px;
+    letter-spacing: 0.008em;
+}
+
+.advantages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    padding-top: 25px;
+}
+
+.advantages__item {
+    width: 300px;
+    list-style: none;
+}
+
+.advantages__wrapper-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.advantages__description {
+    width: 220px;
+}
+
+.advantages__subtitle,
+.advantages__text {
+    margin: 0px;
+}
+
+.advantages__subtitle {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 25px;
+    color: #666d89;
+}
+
+.advantages__text {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 21px;
+    color: #767e9e;
+    padding-top: 7px;
+    padding-bottom: 30px;
+    letter-spacing: -0.02em;
+    text-align: justify;
+}
+
+.advantages__image {
+    padding-top: 5px;
+    background-size: 50%;
 }
