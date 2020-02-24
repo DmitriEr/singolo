@@ -1,0 +1,110 @@
+/* fonts */
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    src: url("assets/font/regular/lato-v16-latin-regular.woff2") format("woff2");
+    src: url("assets/font/regular/lato-v16-latin-regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 300;
+    src: url("assets/font/light/lato-v16-latin-300.woff") format("woff");
+    src: url("assets/font/light/lato-v16-latin-300.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 700;
+    src: url("assets/font/bold/lato-v16-latin-700.woff") format("woff");
+    src: url("assets/font/bold/lato-v16-latin-700.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 900;
+    src: url("assets/font/black/lato-v16-latin-900.woff") format("woff");
+    src: url("assets/font/black/lato-v16-latin-900.woff2") format("woff2");
+}
+
+/* common properties */
+
+body {
+    margin: 0px;
+}
+
+.wrapper {
+    /* width: 100%; */
+    margin: 0 auto;
+    max-width: 940px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+/* portfolio */
+
+.portfolio {
+    background-color: #2d303a;
+    border-bottom: 6px solid #323746;
+    padding-top: 60px;
+    padding-bottom: 34px;
+}
+
+.portfolio__title {
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: 900;
+    font-size: 30px;
+    color: #666d89;
+    text-align: left;
+    margin: 0px;
+}
+
+.portfolio__text {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 18px;
+    font-weight: lighter;
+    color: #767e9e;
+    text-align: left;
+    margin: 0px;
+    padding-top: 23px;
+    padding-bottom: 15px;
+}
+
+.tag {
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #767e9e;
+    border: 1px solid #767e9e;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 5px;
+    margin-right: 6px;
+}
+
+.active,
+.tag:hover {
+    color: #ffffff;
+    border-color: #ffffff;
+    cursor: pointer;
+}
+
+.about-us__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0px;
+}
+
+.about-us__item {
+    padding-top: 5px;
+    padding-bottom: 12px;
+}
