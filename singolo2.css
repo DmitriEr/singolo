@@ -189,10 +189,21 @@ body {
     letter-spacing: -0.005em;
 }
 
-.employee__link {
-    padding-top: 25px;
+.employee__link img {
+    width: 15px;
+    position: relative;
+    position: absolute;
+    left: 25%;
+    top: 25%;
 }
 
-.employee__link a {
-    padding-right: 5px;
+.circle {
+    border: solid 1px #767e9e;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    margin-top: 22px;
 }
