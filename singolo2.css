@@ -210,3 +210,10 @@ body {
     margin-right: 5px;
     margin-top: 22px;
 }
+
+.circle:hover {
+    background-color: #ffffff;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: .2s;
+}
