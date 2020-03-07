@@ -38,7 +38,6 @@ body {
 }
 
 .wrapper {
-    /* width: 100%; */
     margin: 0 auto;
     max-width: 940px;
     padding-left: 40px;
@@ -166,7 +165,7 @@ body {
 /* our-services */
 .our-services {
     padding-top: 57px;
-    padding-bottom: 16px;
+    padding-bottom: 20px;
     background-color: #f2f2f2;
     border-bottom: 6px solid #ffffff;
 }
@@ -432,6 +431,7 @@ body {
 .contact {
     background-color: #f06c64;    
     padding-top: 60px;
+    padding-bottom: 5px;
     border-bottom: 6px solid #ea676b;
 }
 
@@ -476,7 +476,7 @@ textarea {
     resize: none;
     border: none;
     padding-top: 11px;
-    padding-bottom: 12px;
+    padding-bottom: 11px;
     padding-left: 15px;
     padding-right: 8px;
 }
@@ -522,6 +522,7 @@ input {
 
 .information {
     width: 300px;
+    margin-top: 5px;
 }
 
 .information__title {
@@ -531,6 +532,8 @@ input {
     color: #f0d8d9;
     text-align: left;
     margin: 0px;
+    margin-top: -7px;
+    margin-bottom: 5px;
 }
 
 .information__text,
@@ -569,7 +572,7 @@ input {
 .button {
     width: 620px;
     margin-top: 12px;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
     cursor: pointer;
 }
 
@@ -587,6 +590,23 @@ input[value="Send"] {
 
 .footer__text {
     padding-left: 3px;
+    font-family: "Lato", "Arial", sans-serif;
+    font-size: 12px;
+    color: #666d89;
+    font-weight: normal;
+    line-height: 22px; 
+}
+
+.resource {
+    padding-left: 4px;
+}
+
+.resource::before {
+    content: ".";
+    position: relative;
+    bottom: 3px;
+    left: -2px;
+    color: #494e62;
 }
 
 .circle {
@@ -619,8 +639,8 @@ input[value="Send"] {
 }
 
 .footer {
-    padding-top: 20px;
-    padding-bottom: 18px;
+    padding-top: 15px;
+    padding-bottom: 15px;
     background-color: #2d303a;
 }
 
@@ -636,3 +656,5 @@ input[value="Send"] {
     opacity: 0.5;
     background-color: #ffffff;
 }
+
+
