@@ -17,17 +17,17 @@
             </h1>
             <nav class="header__navigation">
                 <ul class="navigation">
-                    <li class="navigation__item"><a href="#" class="active">home</a></li>
-                    <li class="navigation__item"><a href="#">services</a></li>
-                    <li class="navigation__item"><a href="#">portfolio</a></li>
-                    <li class="navigation__item"><a href="#">about</a></li>
-                    <li class="navigation__item"><a href="#">contact</a></li>
+                    <li class="navigation__item active"><a href="#home">home</a></li>
+                    <li class="navigation__item"><a href="#services">services</a></li>
+                    <li class="navigation__item"><a href="#portfolio">portfolio</a></li>
+                    <li class="navigation__item"><a href="#about">about</a></li>
+                    <li class="navigation__item" ><a href="#contact">contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <main class="main">
-        <section class="slider">
+        <section class="slider" id="home">
             <div class="wrapper slider__wrapper">
                 <button class="slider__left">
                     <img src="assets/image/slider/left.png" alt="button-left">
@@ -43,7 +43,7 @@
                 </button>
             </div>
         </section>
-        <section class="our-services">
+        <section class="our-services" id="services">
             <div class="wrapper">
                 <h2 class="our-services__title">Our Services</h2>
                 <p class="our-services__text">
@@ -124,7 +124,7 @@
 
 <!-- singolo2 -->
 
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="wrapper">
                 <h2 class="portfolio__title">Portfolio</h2>
                 <p class="portfolio__text">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
@@ -174,7 +174,7 @@
                 </ul>
             </div>
         </section>
-        <section class="about-us">
+        <section class="about-us" id="about">
             <div class="wrapper">
                 <h2 class="about-us__title">About Us</h2>
                 <p class="about-us__text">
@@ -270,7 +270,7 @@
 
         <!-- singolo3 -->
         
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="wrapper">
                 <h2 class="contact__title">Get a Quote</h2>
                 <p class="contact__text">
@@ -361,6 +361,6 @@
             </div>
         </div>
     </footer>
-
+<script src="script.js"></script>
 </body>
 </html>
