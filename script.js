@@ -1,4 +1,6 @@
 // task 1
+
+// Section - header
 let header = document.querySelector(".header");
 let navigation = header.querySelector("ul");
 let list = navigation.querySelectorAll("li");
@@ -12,72 +14,70 @@ list.forEach(a => {
     });
 });
 
-// task 2
-// смена фона по клику
-/*
-let slider = document.querySelector(".contol");
+// Section - slider
 
-let left = slider.querySelector(".left");
-let right = slider.querySelector(".right");
+// change color
+let background = document.querySelector(".slider");
+let left = document.querySelector(".left");
+let right = document.querySelector(".right");
 
 left.onclick = function() {
-    slider.classList.toggle("background-1");
-    slider.classList.toggle("background-2");
-};
+    background.classList.toggle("background-1");
+    background.classList.toggle("background-2");
+}
 
 right.onclick = function() {
-    slider.classList.toggle("background-1");
-    slider.classList.toggle("background-2");
+    background.classList.toggle("background-1");
+    background.classList.toggle("background-2");
 }
-*/
 
 // slider
 
-let items = document.querySelectorAll(".carousel .item");
+let items = document.querySelectorAll('.carousel .item');
 let currentItem = 0;
 let isEnabled = true;
 
 function changeCurrentItem(n) {
-    currentItem = (n + items.length) % items.length;
+	currentItem = (n + items.length) % items.length;
 }
 
 function hideItem(direction) {
-    isEnabled = false;
-    items[currentItem].classList.add(direction);
-    items[currentItem].addEventListener("animationend", function() {
-        this.classList.remove("active", direction);
-    });
+	isEnabled = false;
+	items[currentItem].classList.add(direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('active', direction);
+	});
 }
 
 function showItem(direction) {
-    items[currentItem].classList.add("next", direction);
-    items[currentItem].addEventListener("animationend", function() {
-        this.classList.remove("next", direction);
-        this.classList.add("active");
-        this.isEnabled = true;
-    });
+	items[currentItem].classList.add('next', direction);
+	items[currentItem].addEventListener('animationend', function() {
+		this.classList.remove('next', direction);
+		this.classList.add('active');
+		isEnabled = true;
+	});
 }
 
 function nextItem(n) {
-    hideItem("to-left");
-    changeCurrentItem(n + 1);
-    showItem("from-right");
+	hideItem('to-left');
+	changeCurrentItem(n + 1);
+	showItem('from-right');
 }
 
 function previousItem(n) {
-    hideItem("to-right");
-    changeCurrentItem(n - 1);
-    showItem("from-left");
+	hideItem('to-right');
+	changeCurrentItem(n - 1);
+	showItem('from-left');
 }
 
-document.querySelector(".control.left").addEventListener("click", function() {
-    if (isEnabled) {
-        previousItem(currentItem);
-    }
+document.querySelector('.control.left').addEventListener('click', function() {
+	if (isEnabled) {
+		previousItem(currentItem);
+	}
 });
 
-document.querySelector(".control.right").addEventListener("click", function() {
-    if (isEnabled) {
-        nextItem(currentItem);
-    }
+document.querySelector('.control.right').addEventListener('click', function() {
+	if (isEnabled) {
+		nextItem(currentItem);
+	}
 });
