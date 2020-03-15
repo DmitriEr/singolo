@@ -36,6 +36,7 @@
 body {
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 .wrapper {
@@ -61,6 +62,7 @@ body {
     position: fixed;
     top: 0px;
     width: 100%;
+    z-index: 1;
 }
 
 .header__wrapper {
@@ -125,22 +127,36 @@ body {
     color: #f06c64; 
 }
 
+.image-vertical,
+.image-horizontal {
+    display: inline-block;
+}
+
 /* main */
 
 /* slider */
 .slider {
-    background-color: #f06c64;
-    
+    /* background-color: #f06c64; */
     padding-top: 53px;
     padding-bottom: 54px;
     border-bottom: 6px solid #ea676b;
 }
 
+.background-1 {
+    background-color: #f06c64;  
+}
+
+.background-2 {
+    background-color: #648BF0;
+}
+
 .slider__wrapper {
     display: flex;
-    flex-wrap: wrap;
+    width: 100%;
+    flex-wrap: nowrap;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    height: 483px;
 }
 
 .slider__left,
@@ -672,11 +688,132 @@ input[value="Send"] {
 .portfolio,
 .about-us,
 .contact {
-    border-top: 70px solid transparent;
-	margin-top: -70px;
+    border-top: 85px solid transparent;
+	margin-top: -85px;
 	-moz-background-clip: padding;
 	-webkit-background-clip: padding-box;
     background-clip: padding-box; 
 }
 
+/*slider DOM */
+
+.carousel {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.items-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.item {
+    display: none;
+    position: relative;
+    margin: 0 auto;
+    animation: 0.5s ease-in-out;
+}
+
+.item.active,
+.item.next {
+    display: block;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 20%;
+    font-size: 32px;
+}
+
+.control {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+.control.left {
+    left: 20%;
+    /* top: 50%; */
+    right: auto;
+}
+
+.control.right {
+    right: 20%;
+    /* top: 50%; */
+    left: auto;
+}
+
+.arrow {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 84px;
+}
+
+.arrow-right {
+    right: 50%;
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    } to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    } to {
+        left: 0;
+    }
+}
+
+.image-vertical-1,
+.image-vertical-2,
+.image-vertical-3 {
+    display: inline-block;
+}
+
+.image-vertical-1 {
+    margin-right: -25px;
+}
+
+.image-vertical-3 {
+    margin-left: -25px;
+}
 

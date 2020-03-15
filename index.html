@@ -27,20 +27,58 @@
         </div>
     </header>
     <main class="main">
-        <section class="slider" id="home">
+        
+        <section class="slider background-1" id="home">
+            <!-- фон -->
             <div class="wrapper slider__wrapper">
-                <button class="slider__left">
-                    <img src="assets/image/slider/left.png" alt="button-left">
-                </button>
-                <div class="image-vertical">
-                    <img src="assets/image/slider/iPhone-vertical.png" alt="iPhone-vertical"> 
+                <div class="carousel">
+
+                    <div class="items-container">
+
+                        <!-- слайд №1 -->
+                        <div class="item active">
+                            <div class="description">
+                                <div class="image-vertical">
+                                    <img src="assets/image/slider/iPhone-vertical.png" alt="iPhone-vertical"> 
+                                </div>
+                                <div class="image-horizontal">
+                                    <img src="assets/image/slider/iPhone-horizontal.png" alt="iPhone-horizontal"> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- слайд №2 -->
+                        <div class="item">
+                            <div class="description">
+                                <div class="image-vertical-1">
+                                    <img src="assets/image/slider-DOM/phone-vertical-left.png" alt="iPhone-vertical"> 
+                                </div>
+                                <div class="image-vertical-2">
+                                    <img src="assets/image/slider-DOM/phone-vertical-central.png" alt="iPhone-horizontal"> 
+                                </div>
+                                <div class="image-vertical-3">
+                                    <img src="assets/image/slider-DOM/phone-vertical-right.png" alt="iPhone-horizontal"> 
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+
+                    <!-- кнопка влево -->
+                    <div class="control left">
+                        <div class="arrow left">
+                            <img src="assets/image/slider/left.png" alt="left">
+                        </div>
+                    </div>
+
+                    <!-- кнопка вправо -->
+                    <div class="control right">
+                        <div class="arrow right">
+                            <img src="assets/image/slider/right.png" alt="right">
+                        </div>
+                    </div>
+
                 </div>
-                <div class="image-horizontal">
-                    <img src="assets/image/slider/iPhone-horizontal.png" alt="iPhone-horizontal"> 
-                </div>
-                <button class="slider__right">
-                    <img src="assets/image/slider/right.png" alt="button-right">
-                </button>
             </div>
         </section>
         <section class="our-services" id="services">
