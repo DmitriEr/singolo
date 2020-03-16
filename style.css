@@ -413,7 +413,14 @@ body {
     margin-left: 1px;
 }
 
-.active,
+.tag__selected {
+    color: #ffffff;
+}
+
+.tag__bordered {
+    border: 1px solid #767e9e;
+}
+
 .tag:hover {
     color: #ffffff;
     border-color: #ffffff;
@@ -454,11 +461,10 @@ body {
     border: 5px solid #F06C64;
 }
 
-.borderNone {
-    padding: 0px;
-    margin: 0px;
-    height: 187px; 
-    border: 0px solid #F06C64; 
+/* переключение табов */
+
+.activeTag {
+    color: #ffffff;
 }
 
 /* about-us */
