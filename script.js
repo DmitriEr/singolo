@@ -8,7 +8,7 @@ let list = navigation.querySelectorAll("li");
 // По клику удаляем класс active и добавляем класс active к элементу (по которому произошошел клик)
 list.forEach(a => {
     a.addEventListener("click", function() {
-        navigation.querySelector(".active").classList.remove("active");
+        navigation.querySelector("active").classList.remove("active");
 
     a.classList.add("active");
     });
@@ -81,3 +81,15 @@ document.querySelector('.control.right').addEventListener('click', function() {
 		nextItem(currentItem);
 	}
 });
+
+// border in portfolio
+
+const portfolio = document.querySelector(".portfolio");
+const portfolioList = portfolio.querySelector(".portfolio__list");
+const portfolioItem = portfolioList.querySelectorAll(".portfolio__item");
+
+portfolioItem.forEach(a => {
+	a.addEventListener("click", function() {
+		a.classList.toggle("border");
+	})
+})
