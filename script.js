@@ -83,6 +83,35 @@ document.querySelector('.control.right').addEventListener('click', function() {
 	}
 });
 
+// выключение телефона
+
+const onClickChangePhoto = () => {
+	let verticalPhone = document.querySelector(".slider .slide-1 .vertical-on");
+	let verticalPhoneOff = document.querySelector(".slider .slide-1 .vertical-off");
+	let horizontalPhone = document.querySelector(".slider .slide-1 .horizontal-on");
+	let horizontalPhoneOff = document.querySelector(".slider .slide-1 .horizontal-off");
+
+	verticalPhone.addEventListener("click", () => {
+		verticalPhone.style.display="none";
+		verticalPhoneOff.style.display="block";	
+	})
+
+	verticalPhoneOff.addEventListener("click", () => {
+		verticalPhoneOff.style.display="none";
+		verticalPhone.style.display="block";	
+	})
+
+	horizontalPhone.addEventListener("click", () => {
+		horizontalPhone.style.display="none";
+		horizontalPhoneOff.style.display="block";
+	})
+
+	horizontalPhoneOff.addEventListener("click", () => {
+		horizontalPhoneOff.style.display="none";
+		horizontalPhone.style.display="block";
+	})
+}
+
 // border in portfolio
 
 const portfolio = document.querySelector(".portfolio");
@@ -94,22 +123,11 @@ portfolioItem.forEach(a => {
 		a.classList.toggle("border");
 	})
 })
-/*
-// переключение табов
-
-const portfolioTag = document.querySelector(".portfolio__tags");
-const tag = portfolioTag.querySelectorAll(".tag");
-
-portfolioTag.addEventListener("click", () => {
-	portfolioTag.querySelectorAll("button").forEach(a => a.classList.remove("activeTag"));
-	event.target.classList.add("activeTag");
-})
-*/
-// картинки !!!!!!!!!!!!!!!!!!!!!!1
 
 window.onload = function() {
 	// Tags
 	addTagsClickHandler();
+	onClickChangePhoto();
 }
 
 const addTagsClickHandler = () => {
