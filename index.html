@@ -310,16 +310,26 @@
                                 <input type="email" name="emai" placeholder="Email (Required)" required>
                             </div>
                             <div class="form__group">
-                                <input type="text" name="text" placeholder="Subject">
+                                <input type="text" name="text" placeholder="Subject" class="subject">
                             </div>
                             <div class="form__group-fields">
-                                <textarea class="field" name="" id="" cols="60" rows="12" placeholder="Describe your project in detail..."></textarea>
+                                <textarea class="describe" name="" id="" cols="60" rows="12" placeholder="Describe your project in detail..."></textarea>
                             </div>
                             <div class="form__group">
-                                <input type="submit" class="button" value="Send">
+                                <input type="submit" id="send-form" class="button" value="Send">
                             </div>
                         </form>
                     </div>
+                    
+                    <div class="modal" id="modal-window">
+                        <div class="modal-content">
+                            <p class="modal-text">Письмо отправлено</p>
+                            <p class="subject-text">Без темы</p>
+                            <p class="describe-text">Без описания</p>
+                            <sapn class="close">ОК</sapn>
+                        </div>
+                    </div>
+
                     <div class="information">
                         <h4 class="information__title">Contact Information</h4>
                         <p class="information__text">

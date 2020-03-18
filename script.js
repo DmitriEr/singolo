@@ -166,3 +166,31 @@ function generator () {
 	}
 }
 
+// get form
+const modalShow = document.querySelector("#modal-window");
+const sendForm = document.querySelector("#send-form");
+const closeModalShow = document.querySelector(".close")
+
+sendForm.onclick = (event) => {
+	event.preventDefault();
+	modalShow.style.display="flex";
+
+	closeModalShow.onclick = () => {
+		modalShow.style.display="none";
+	}
+	let subject = document.querySelector(".subject");
+	let subjectText = document.querySelector(".subject-text")
+	
+	if (subject.value == "Singolo") {
+		subjectText.innerHTML = "Тема: Singolo"
+	} 
+
+	let describe = document.querySelector(".describe");
+	let describeText = document.querySelector(".describe-text");
+
+	if (describe.value == "Описание: Portfolio project") {
+		describeText.innerHTML = "Описание: Portfolio project";
+	} 
+}
+
+

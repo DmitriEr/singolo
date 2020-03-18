@@ -736,7 +736,61 @@ input {
 }
 
 input[value="Send"] {
-    color:  #ffffff ;
+    color:  #ffffff73 ;
+}
+
+/* модальное окно */
+
+.modal {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,.7);
+}
+
+.modal-content {
+    background-color: #fff;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10% auto;
+    padding: 20px;
+    border: 2px solid #000;
+    width: 300px;
+}
+
+.modal-text,
+.subject-text,
+.describe-text {
+    margin: 0;
+    line-height: 35px;
+    color: #000;
+    width: 100%;
+    font-size: 20px;
+    font-weight: normal;
+    font-family: "Lato", "Arial", sans-serif;
+}
+
+.close {
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: lighter;
+    line-height: 40px;
+}
+
+.close:hover {
+    cursor: pointer;
+    color: #d6564f;
 }
 
 /* footer */
