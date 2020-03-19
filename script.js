@@ -191,6 +191,10 @@ sendForm.onclick = (event) => {
 
 	closeModalShow.onclick = () => {
 		modalShow.style.display="none";
+		let textInput = [...document.querySelectorAll(".text-reset")];
+		for (let i = 0; i < textInput.length; i++) {
+			textInput[i].value = "";
+		}
 	}
 	let subject = document.querySelector(".subject");
 	let subjectText = document.querySelector(".subject-text")
