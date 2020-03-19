@@ -15,6 +15,20 @@ list.forEach(a => {
     });
 });
 
+// плавная прокурутка страницы
+const anchors = document.querySelectorAll('a[href*="#"]');
+
+for (let i = 0; i < anchors.length; i++) {
+	anchors[i].addEventListener("click", (event) => {
+		event.preventDefault();
+		let blockId = anchors[i].getAttribute("href")
+		document.querySelector("" + blockId).scrollIntoView({
+			behavior: "smooth",
+			block: "start",
+		})
+	})
+}
+
 // Section - slider
 
 // change color
