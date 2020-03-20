@@ -871,17 +871,12 @@ input[value="Send"] {
 }
 
 /* Ссылка-якори с отступом сверху. Устранение смещения из-за фиксированного блока */
-
 .slider,
 .our-services,
 .portfolio,
 .about-us,
 .contact {
-    border-top: 85px solid transparent;
-	margin-top: -85px;
-	-moz-background-clip: padding;
-	-webkit-background-clip: padding-box;
-    background-clip: padding-box; 
+    scroll-margin-top: 85px;
 }
 
 /* responsive */

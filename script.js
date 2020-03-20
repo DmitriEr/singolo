@@ -203,7 +203,7 @@ sendForm.onclick = (event) => {
 
 	for (let i = 0; i < arrRequired.length; i++) {
 		if (arrRequired[i].value == "") {
-			alert("Заполните обязательные поля :" + arrRequired[i].name);
+			alert("Заполните обязательные поля: " + arrRequired[i].name);
 			modalShow.style.display="none";
 		} else {
 			modalShow.style.display="flex";
