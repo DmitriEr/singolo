@@ -187,7 +187,7 @@ const closeModalShow = document.querySelector(".close")
 
 sendForm.onclick = (event) => {
 	event.preventDefault();
-	modalShow.style.display="flex";
+	// modalShow.style.display="flex";
 
 	closeModalShow.onclick = () => {
 		modalShow.style.display="none";
@@ -196,6 +196,20 @@ sendForm.onclick = (event) => {
 			textInput[i].value = "";
 		}
 	}
+
+	let textRequired = document.querySelectorAll(".required");
+
+	let arrRequired = [...textRequired];
+
+	for (let i = 0; i < arrRequired.length; i++) {
+		if (arrRequired[i].value == "") {
+			alert("Заполните обязательные поля :" + arrRequired[i].name);
+			modalShow.style.display="none";
+		} else {
+			modalShow.style.display="flex";
+		}
+	}
+
 	let subject = document.querySelector(".subject");
 	let subjectText = document.querySelector(".subject-text")
 	

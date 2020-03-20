@@ -51,16 +51,19 @@
                   
                 </div>
                 
-                <div class="control left">
-                  <div class="arrow left">
-                      <img src="assets/image/slider/left.png" alt="to-left">
-                  </div>
+                <div class="wrapper">
+                    <div class="control left">
+                      <div class="arrow left">
+                          <img src="assets/image/slider/left.png" alt="to-left">
+                      </div>
+                    </div>
+                    <div class="control right">
+                      <div class="arrow right">
+                        <img src="assets/image/slider/right.png" alt="to-right">
+                      </div>
+                    </div>
                 </div>
-                <div class="control right">
-                  <div class="arrow right">
-                    <img src="assets/image/slider/right.png" alt="to-right">
-                  </div>
-                </div>
+
               </div>
             </div>
 
@@ -156,7 +159,7 @@
                     <button class="tag tag__bordered">Graphic Design</button>
                     <button class="tag tag__bordered">Artwork</button>
                 </div>
-                <ul class="portfolio__list 1">
+                <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <img src="assets/image/portfolio/picture-1.jpg" alt="portfolio-picture-1">
                     </li>
@@ -206,7 +209,7 @@
                 </p>
                 <ul class="employee-list">
                     <li class="employee">
-                        <img src="assets/image/about-us/team-1.jpg" alt="employee-avatar">
+                        <img src="assets/image/about-us/team-1.jpg" alt="employee-avatar" class="portrait">
                         <h4 class="employee__name">Adam Jensen</h4>
                         <p class="employee__description">Quisque luctus, quam eget molestie commodo, lacus purus cursus purus, nec rutrum tellus dolor id lorem.</p>
                         <div class="employee__link">
@@ -233,7 +236,7 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img src="assets/image/about-us/team-2.jpg" alt="employee-avatar">
+                        <img src="assets/image/about-us/team-2.jpg" alt="employee-avatar" class="portrait">
                         <h4 class="employee__name">Desmond Miles</h4>
                         <p class="employee__description">Curabitur vestibulum eget mauris quis laoreet. Phasellus in quam laoreet, viverra lacus ut, ultrices velit.</p>
                         <div class="employee__link">
@@ -260,7 +263,7 @@
                         </div>
                     </li>
                     <li class="employee">
-                        <img src="assets/image/about-us/team-3.jpg" alt="employee-avatar">
+                        <img src="assets/image/about-us/team-3.jpg" alt="employee-avatar" class="portrait">
                         <h4 class="employee__name">Scolara Visari</h4>
                         <p class="employee__description">Nulla sed nunc et tortor luctus faucibus. Morbi at aliquet turpis, et consequat felis. Quisque condimentum.</p>
                         <div class="employee__link">
@@ -304,10 +307,10 @@
                     <div class="form">
                         <form action method="POST">
                             <div class="form__group">
-                                <input class="text-reset" type="text" name="name" placeholder="Name (Required)" required>
+                                <input class="text-reset required" type="text" name="name" placeholder="Name (Required)" required>
                             </div>
                             <div class="form__group">
-                                <input class="text-reset"  type="email" name="emai" placeholder="Email (Required)" required>
+                                <input class="text-reset required"  type="email" name="emai" placeholder="Email (Required)" required>
                             </div>
                             <div class="form__group">
                                 <input type="text" name="text" placeholder="Subject" class="subject text-reset">
@@ -316,7 +319,7 @@
                                 <textarea class="describe text-reset" name="" id="" cols="60" rows="12" placeholder="Describe your project in detail..."></textarea>
                             </div>
                             <div class="form__group">
-                                <input type="submit" id="send-form" class="button" value="Send">
+                                <input type="submit" id="send-form" class="button" value="SEND">
                             </div>
                         </form>
                     </div>

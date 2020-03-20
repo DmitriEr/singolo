@@ -150,7 +150,7 @@ body {
 
 .wrapper-slider {
     position: relative;
-    width: 940px;
+    max-width: 940px;
     margin-left: 40px;
     margin-right: 40px;
     margin: auto;
@@ -723,16 +723,22 @@ input {
 }
 
 .button {
-    width: 620px;
-    margin-top: 12px;
-    margin-bottom: 7px;
-    cursor: pointer;
+    width: 135px;
+    background-color: #FBC65F;
+    font-family: "Lato", "Arial", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 13px;
 }
 
 .button:hover {
     background-color: #ffffff;
     color: #d6564f;
     transition: .5s;
+    cursor: pointer;
 }
 
 input[value="Send"] {
@@ -877,3 +883,83 @@ input[value="Send"] {
 	-webkit-background-clip: padding-box;
     background-clip: padding-box; 
 }
+
+/* responsive */
+
+@media (max-width: 768px) {
+    .wrapper {
+        padding-left: 29px;
+        padding-right: 29px;
+    }
+    
+    /* slider */
+    .description {
+        justify-content: space-evenly;
+    }
+    
+    .vertical-on,
+    .vertical-off {
+        height: 364px;
+        width: 181px;
+    }
+    .horizontal-on,
+    .horizontal-off {
+        height: 181px;
+        width: 364px;
+    }
+
+    .slide-2 img:last-of-type {
+        margin-left: -140px;
+    }
+
+    .slide-2 img:nth-of-type(2) {
+        margin-left: -130px;
+    }
+
+    .control.left {
+        padding-left: 24px;
+    }
+
+    .control.right {
+        padding-right: 40px;
+    }
+
+    /* portfolio */
+    .portfolio__list {
+        max-height: 820px;
+    }
+
+    .portfolio__item img {
+        height: 184px;
+        width: 216px;
+    }
+
+    .portfolio__item img {
+        margin-bottom: 20px;
+    }
+
+    .portfolio__item {
+    padding: 0px;
+    }
+
+    /* about us */
+    .portrait {
+        width: 219px;
+        height: 219px;
+    }
+
+    /* form */
+    .form,
+    .form__group {
+        width: 442px;
+    }
+
+    input,
+    textarea {
+        width: 419px;
+    }
+
+    .information {
+        width: 221px;
+    }
+}  
