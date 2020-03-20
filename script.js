@@ -187,26 +187,25 @@ const closeModalShow = document.querySelector(".close")
 
 sendForm.onclick = (event) => {
 	event.preventDefault();
-	// modalShow.style.display="flex";
+	modalShow.style.display="flex";
+
+		if (document.querySelector(".required-name").value.length < 2) {
+			modalShow.style.display="none";
+			alert("Строка пустная");
+		}
+
+		let mail = document.querySelector(".required-mail");
+
+		if (!/[@]/.test(mail.value)) {
+			modalShow.style.display="none";
+			alert("Адрес электронной почты введен не верно");
+		}
 
 	closeModalShow.onclick = () => {
 		modalShow.style.display="none";
 		let textInput = [...document.querySelectorAll(".text-reset")];
 		for (let i = 0; i < textInput.length; i++) {
 			textInput[i].value = "";
-		}
-	}
-
-	let textRequired = document.querySelectorAll(".required");
-
-	let arrRequired = [...textRequired];
-
-	for (let i = 0; i < arrRequired.length; i++) {
-		if (arrRequired[i].value == "") {
-			alert("Заполните обязательные поля: " + arrRequired[i].name);
-			modalShow.style.display="none";
-		} else {
-			modalShow.style.display="flex";
 		}
 	}
 
