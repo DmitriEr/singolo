@@ -991,7 +991,7 @@ input[value="Send"] {
 
     /* portfolio */
     .portfolio__list {
-        max-height: 820px;
+        max-height: 1020px;
         margin-top: 20px;
     }
 
@@ -1190,6 +1190,241 @@ input[value="Send"] {
 
     .employee .portrait {
         width: 314px;
+        height: auto;
+    }
+
+    .employee__name {
+        padding-top: 18px;
+        padding-bottom: 5px;
+    }
+
+    .employee__link {
+        padding-top: 9px;
+        padding-bottom: 34px;
+    }
+
+    /* contact */
+    .contact {
+        padding-top: 44px;
+        padding-bottom: 42px;
+    }
+
+    .contact__text {
+        padding-top: 14px;
+        padding-bottom: 19px;
+    }
+
+    .form,
+    .form__group {
+        width: 100%;
+    }
+
+    input,
+    textarea {
+        width: calc(100% - 23px);
+    }
+
+    input {
+        margin-bottom: 12px;
+    }
+
+    .button {
+        margin-top: 14px;
+        margin-bottom: 32px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        width: 100%;
+    }
+
+    .information__text {
+        padding-bottom: 15px;
+    }
+
+    /* footer */
+    .footer {
+        padding: 22px 0px;
+    }
+
+    .footer__text {
+        display: none;
+    }
+
+    .footer__link {
+        margin: 0px auto;
+    }
+}
+
+/* small */
+
+@media (max-width: 374px) {
+    .wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    /* main */
+    .main {
+        margin-top: 0px;
+    }
+
+    /* header */
+    .header {
+        padding-top: 24px;
+        padding-bottom: 23px;
+        font-size: 20px;
+        border: none;
+        position: relative;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .header__wrapper {
+        justify-content: center;
+    }
+
+    .header__navigation {
+        position: absolute;
+        left: 0px;
+        top: 90px;
+        background-color: #2D303A;
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .navigation__item {
+        width: 100%;
+        padding: 0px;   
+    }
+
+    .burger {
+        display: block;
+    }
+
+    /* slider */
+    .description,
+    .slider {
+        height: 218px;
+    }
+
+    .carousel {
+        margin-top: 109px;
+        width: 95%;
+    }
+
+    .description {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .vertical-on,
+    .vertical-off {
+        height: 148px;
+        width: 69px;
+    }
+
+    .horizontal-on,
+    .horizontal-off {
+        height: 69px;
+        width: 148px;
+    }
+
+    .phone-central {
+        height: 178px;
+        width: 89px;
+    }
+
+    .slide-2 {
+        justify-content: center;
+    }
+
+    .phone-left,
+    .phone-right {
+        width: 70px;
+        height: 130px;
+    }
+
+    .phone-left {
+        padding-right: 3%;
+    }
+
+    .phone-right {
+        padding-left: 6%;
+    }
+
+    .arrow {
+        font-size: 25px;
+    }
+
+    .arrow img {
+        width: 14px;
+        height: 25px; 
+    }
+
+    
+    /* our services */
+    .our-services {
+        padding-top: 25px;
+    }
+
+    .advantages__description {
+        width: 100%;
+        margin-left: 10px;
+    }
+
+    .advantages__wrapper-inner {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    /* portfolio */
+    .portfolio {
+        padding-top: 42px;
+        padding-bottom: 71px;
+    }
+
+    .portfolio__text {
+        padding-top: 14px;
+        padding-bottom: 10px;
+    }
+
+    .portfolio__item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio__list {
+        max-height: 615px;
+        margin-bottom: 0px;
+    }
+
+    li.portfolio__item {
+        padding: 0px;
+        margin-bottom: 14px;
+    }
+
+    /* about-us */
+    .about-us {
+        padding-top: 33px;
+        padding-bottom: 0px;
+    }
+
+    .about-us__text {
+        padding: 14px 0px 14px;
+    }
+
+    .employee {
+        width: 100%;
+    }
+
+    .employee .portrait {
+        width: 100%;
         height: auto;
     }
 
