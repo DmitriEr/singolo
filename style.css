@@ -1034,6 +1034,10 @@ input[value="Send"] {
 }
 
 @media (max-width: 767px) and (min-width: 375px) {
+    body {
+        margin-top: 71px;
+    }
+    
     .wrapper {
         padding-left: 30px;
         padding-right: 30px;
@@ -1050,7 +1054,7 @@ input[value="Send"] {
         padding-bottom: 23px;
         font-size: 20px;
         border: none;
-        position: relative;
+        position: fixed;
     }
 
     .logo {
@@ -1065,23 +1069,66 @@ input[value="Send"] {
         position: absolute;
         left: 0px;
         top: 90px;
-        background-color: #2D303A;
+        background-color: #2D303A; 
+    }
+
+    .header__navigation-off {
         display: none;
+    }
+
+    .header__navigation-on {
+        position: fixed;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        overflow: auto;
+        display: block;
+        background: rgba(0,0,0,.7);
     }
 
     .navigation {
         display: flex;
         flex-wrap: wrap;
         padding: 0px;
+        list-style: none;
+        width: 278px;
+        padding-top: 232px;
+        padding-bottom: calc(100% - 30px);
+        background-color: #2D303A;
     }
 
     .navigation__item {
-        width: 100%;
-        padding: 0px;   
+        width: 205px;
+        padding: 0px;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: -0.035em;
+        padding-left: 71px;
+        padding-right: 2px;
+        padding-bottom: 27px;   
+    }
+
+    .navigation__item::before {
+        display: none;
+    }
+
+    .logo-off {
+        z-index: 2;
+        left: 71px;
+    }
+
+    .logo-on {
+        z-index: 2;
+        left: 71px;
+        margin-right: 330px;  
     }
 
     .burger {
         display: block;
+        z-index: 2;
+        position: fixed;
     }
 
     /* slider */
