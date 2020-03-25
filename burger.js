@@ -7,4 +7,8 @@ burgerMenu.onclick = function() {
 
     document.querySelector(".logo").classList.toggle("logo-on");
     document.querySelector(".logo").classList.toggle("logo-off");
+
+    document.querySelector(".burger__item").classList.toggle("burger__item-on")
 };
+
+
