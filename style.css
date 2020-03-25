@@ -1121,7 +1121,7 @@ input[value="Send"] {
         margin-left: 30%;
         padding: 0px;
         font-size: 24px;
-        line-height: 29px;
+        line-height: 50px;
         letter-spacing: -0.035em;
     }
 
@@ -1335,6 +1335,11 @@ input[value="Send"] {
 /* small */
 
 @media (max-width: 374px) {
+
+    body {
+        margin-top: 71px;
+    }
+    
     .wrapper {
         padding-left: 30px;
         padding-right: 30px;
@@ -1351,18 +1356,22 @@ input[value="Send"] {
         padding-bottom: 23px;
         font-size: 20px;
         border: none;
-        position: relative;
+        position: fixed;
     }
 
-    .navigation {
-        display: flex;
-        align-content: flex-start;
-        flex-wrap: wrap;
-        padding: 0px;
-        list-style: none;
-        width: 278px;
-        height: 100vh;
-        background-color: #2D303A;
+    .logo {
+        font-size: 20px;
+    }
+
+    .header__wrapper {
+        justify-content: center;
+    }
+
+    .header__navigation {
+        position: absolute;
+        left: 0px;
+        top: 90px;
+        background-color: #2D303A; 
     }
 
     .header__navigation-off {
@@ -1381,8 +1390,32 @@ input[value="Send"] {
         background: rgba(0,0,0,.7);
     }
 
-    .logo {
-        font-size: 20px;
+    .navigation {
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+        padding: 0px;
+        list-style: none;
+        width: 278px;
+        height: 100vh;
+        background-color: #2D303A;
+    }
+
+    .navigation__item:first-of-type {
+        padding-top: 50%;
+    }
+
+    .navigation__item {
+        width: 100%;
+        margin-left: 30%;
+        padding: 0px;
+        font-size: 24px;
+        line-height: 50px;
+        letter-spacing: -0.035em;
+    }
+
+    .navigation__item::before {
+        display: none;
     }
 
     .logo-off {
@@ -1407,33 +1440,6 @@ input[value="Send"] {
     .burger__item-on {
         transform: rotate(90deg);
         top: 10px;
-    }
-
-    .header__wrapper {
-        justify-content: center;
-    }
-
-    .header__navigation {
-        position: absolute;
-        left: 0px;
-        top: 90px;
-        background-color: #2D303A;
-        display: none;
-    }
-
-    .navigation {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0px;
-    }
-
-    .navigation__item {
-        width: 100%;
-        padding: 0px;   
-    }
-
-    .burger {
-        display: block;
     }
 
     /* slider */
@@ -1529,7 +1535,7 @@ input[value="Send"] {
     }
 
     .portfolio__list {
-        max-height: 560px;
+        max-height: 595px;
         margin-bottom: 0px;
         padding: 5px;
         margin: 10px;
